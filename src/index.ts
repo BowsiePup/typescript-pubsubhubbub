@@ -383,11 +383,22 @@ export default class PubSubHubBubServer extends EventEmitter3 {
       .bind(this);
   }
 
+  /**
+   * Will be fired when HTTP server has successfully started listening on the selected port
+   *
+   * @event
+   */
   private _onListening(): void {
     // Fire a listening event
     this.emit("listening");
   }
 
+  /**
+   * Error event handler for the HTTP server
+   *
+   * @event
+   * @param {Error} error Error object
+   */
   private _onError(err: HttpError): void {
     //Check if the error is from the listen action
     if (err.syscall == "listen")

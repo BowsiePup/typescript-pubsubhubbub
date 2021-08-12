@@ -1,7 +1,5 @@
-dist/
 package-lock.json
-.env
-!example.env
 node_modules
 .vsc*
 .prettierrc
+dist/
