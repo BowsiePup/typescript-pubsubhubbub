@@ -1,0 +1,33 @@
+{
+  "name": "typescript-pubsubhubbub",
+  "version": "1.0.0",
+  "description": "A typescript version of https://github.com/pubsubhubbub/node-pubsubhubbub",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BowsiePup/typescript-pubsubhubbub.git"
+  },
+  "keywords": [
+    "pubsubhubbub",
+    "typescript",
+    "typed",
+    "typings"
+  ],
+  "author": "BowsiePup",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BowsiePup/typescript-pubsubhubbub/issues"
+  },
+  "homepage": "https://github.com/BowsiePup/typescript-pubsubhubbub#readme",
+  "devDependencies": {
+    "@types/node": "^16.4.13"
+  },
+  "dependencies": {
+    "common-tags": "^1.8.0",
+    "eventemitter3": "^4.0.7",
+    "request": "^2.88.2"
+  }
+}
