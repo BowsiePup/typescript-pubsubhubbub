@@ -112,6 +112,8 @@ export default class PubSubHubBubServer extends EventEmitter3 {
     // Handle errors and listening events
     this.server.on("error", this._onError.bind(this));
     this.server.on("listening", this._onListening.bind(this));
+    
+    this.server.listen(this.port)
   }
 
   /** Subscribes to a topic on the provided hub
